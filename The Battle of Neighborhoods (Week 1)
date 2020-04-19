@@ -1,0 +1,26 @@
+Capstone Project - The Battle of Neighborhoods
+Introduction
+Background
+London is the economic and political center of UK, and its land prices have always been high. Before Brexit earlier in this year, someone warned that if Brexit, the value houses in UK may fall and this will have an impact on the British market. Recently, the impact of coronavirus has also shocked the UK housing market, according to Global Property Consultancy, UK house prices would probably fall by 3% in 2020, and expects the prices to recover in 2021. In current scenario, it could be a new opportunity for business operators and investors.
+
+Problem
+The land price directly affects the operating conditions of some commercial operators, that could be refleced through leasing or purchasing the land to operate, especially have more impacts on the catering industry. Usually, the rent costs accounts for a large portion of the expenditure. therefore, the choice of location and whether the operator could balance the the revenue and the cost are of vital importance.
+
+To explore this issue, we will explore the components of venues in the Greater London area, the distribution of regional land prices, what venues are popular with the public, and recommend different business model based on the operator's own situation.
+
+Interested Audience
+People who are moving to large cities as well as new immigrants that want to start their own businesses are more likely insterested in this case.
+
+Data
+Data that will be collected:
+1. List of postcode and coordinates of Greater London area
+2. List of average land value and value change for the area covered under certarin postcodes
+3. List of venues information around given postcodes (venue latitude, longitude and category)
+4. Most common and popular venues in Greater London area
+
+
+The location that includes the postcode and coordinates of Greater London area are extracted from www.doogal.co.uk, which collects and sort out UK postcodes as well as data from Land Registry data from GOV.UK, and this website has more clear and organized data provided to public. These data are used to search land value information through Zoopla, nearby venues information through FourSquar, as well as be plotted on maps.
+
+The land value information comes from www.zoopla.co.uk is a property website, which is more reliable because it update housing market information on a monthly basis. This website provides API to obtain data, however the free version has a lot of restrictions, so the web crawler is used to get land value information. The land value data are used to identify how the highest and lowest land value area distributed, and it will be helpful to indicate different business models and strategies. The value change could be used to decide future trend to make better decisions.
+
+To explore a given location, such as London in this case, the FourSquare API is used to get the most common venue categories in each postcode area, which are used to group postcode into clusers and build visualization.
